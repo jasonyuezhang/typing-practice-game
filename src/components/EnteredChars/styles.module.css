@@ -1,0 +1,33 @@
+.TypingFont {
+  font-family: "Courier", sans-serif;
+  font-size: 3em;
+}
+
+.EnteredChars {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.EnteredChar {
+  display: inline;
+}
+
+.EnteredChar.Match {
+  color: black;
+}
+
+.EnteredChar.Mismatch {
+  color: #ee7777;
+}
+
+.EnteredChar.Unicode {
+  padding: 0.5em 0;
+  display: inline-block;
+  line-height: 2em;
+  font-size: 1.5em;
+}

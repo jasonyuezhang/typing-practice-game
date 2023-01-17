@@ -1,0 +1,42 @@
+.TypingFont {
+  font-family: "Courier", sans-serif;
+  font-size: 3em;
+}
+
+.TypingItem {
+  background: transparent;
+  max-width: 100%;
+  position: relative;
+}
+
+.EnteredChars {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.TypingInput {
+  background: transparent;
+  border: none;
+  caret-color: transparent;
+  width: 0.6em;
+  z-index: 1;
+}
+
+.TypingInput:focus {
+  outline-width: 0;
+}
+
+.TypingPlaceholder {
+  color: grey;
+  white-space: pre-wrap;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  text-align: left;
+  user-select: none;
+}

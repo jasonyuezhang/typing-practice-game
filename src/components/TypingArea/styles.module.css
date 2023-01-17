@@ -1,0 +1,27 @@
+.TypingAreaWrapper {
+  position: relative;
+  margin: 5vw;
+}
+
+.TypingArea {
+  filter: blur(7px);
+}
+
+.TypingArea:focus-within {
+  filter: unset;
+}
+
+.BlurOverlay {
+  display: flex;
+  flex-direction: column;
+  flex-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.BlurOverlay p {
+  font: 1.5em serif;
+}
